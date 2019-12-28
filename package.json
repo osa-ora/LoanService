@@ -1,0 +1,8 @@
+{ "name": "LoanService",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node D:\\NetBeans 8.2\\node LosnService.js"
+  },
+  "dependencies": { 
+  }
+}

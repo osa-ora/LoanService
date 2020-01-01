@@ -1,9 +1,29 @@
-{ "name": "LoanService",
+{
+  "name": "LoanService",
   "version": "1.0.0",
   "author": "ooransa",
   "scripts": {
     "start": "node LoanService.js"
   },
-  "dependencies": { 
-  }
+  "dependencies": {
+    "request": "^2.88.0",
+    "response": "^0.18.0",
+    "url": "^0.11.0",
+    "url-search-params": "^1.1.0"
+  },
+  "description": "Sample NodeJS Microservice to Respond to Loan Requests",
+  "main": "LoanService.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://osa-ora@github.com/osa-ora/LoanService.git"
+  },
+  "keywords": [
+    "Loan",
+    "Service"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osa-ora/LoanService/issues"
+  },
+  "homepage": "https://github.com/osa-ora/LoanService#readme"
 }

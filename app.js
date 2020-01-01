@@ -9,7 +9,6 @@ exports.start = function(port){
         }
         port=port || process.env.PORT || '8000';
 	server=http.createServer(function (request, res) {
-                var myURL = require('url').URL;
 		var loanAmount=0;
 		var creditValue=0;
 		//console.log('request_url'+request_url+' method='+request.method);
@@ -22,7 +21,8 @@ exports.start = function(port){
 			var request_url='http://' + request.headers.host + '/'+request.url;
 			// routing
 				if(request.method === 'GET') {
-				var current_url =  new myURL(request_url);
+                                var myURL = require('url');
+				var current_url =  new myURL.URL(request_url);
 				var search_params = current_url.searchParams;
 				// "loanAmount" parameter
 				if(search_params.has('loanAmount'))

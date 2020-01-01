@@ -2,7 +2,13 @@ var http = require('http');
 var URL = require('url').URL;
 var server;
 exports.start = function(port){
-	port=port || process.env.PORT || '8000';
+        if (typeof String.prototype.startsWith != 'function') {
+          // see below for better implementation!
+          String.prototype.startsWith = function (str){
+            return this.indexOf(str) === 0;
+          };
+        }
+        port=port || process.env.PORT || '8000';
 	server=http.createServer(function (request, res) {
 		var loanAmount=0;
 		var creditValue=0;

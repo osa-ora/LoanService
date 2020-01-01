@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "author": "ooransa",
   "scripts": {
-    "start": "npm start"
+    "start": "node start"
   },
   "dependencies": {
     "request": "^2.88.0",

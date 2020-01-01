@@ -6,6 +6,7 @@
     "start": "node LoanService.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
     "http": "0.0.0",
     "request": "^2.88.0",
     "response": "^0.18.0",

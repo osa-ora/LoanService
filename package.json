@@ -1,7 +1,8 @@
 { "name": "LoanService",
   "version": "1.0.0",
+  "author": "ooransa",
   "scripts": {
-    "start": "node LosnService.js"
+    "start": "node LoanService.js"
   },
   "dependencies": { 
   }
